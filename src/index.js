@@ -1,5 +1,5 @@
 module.exports = function getZerosCount(number, base) {
-
+//hm
 var halfBase;
 if(base % 2 == 0){
   halfBase = base / 2;
