@@ -1,16 +1,16 @@
 module.exports = function getZerosCount(number, base) {
 //hm
 
-var resultNa7;
-var sevenBase;
+var resultNa12;
+var twelveBase;
 if(base % 12 == 0){
   
-  sevenBase = base / 12;
-  resultNa7 = Math.floor(number / sevenBase) + Math.floor(number / (sevenBase * sevenBase)) + Math.floor(number / (sevenBase * sevenBase* sevenBase)) + Math.floor(number / (sevenBase * sevenBase * sevenBase * sevenBase)) + Math.floor(number / (sevenBase * sevenBase * sevenBase * sevenBase * sevenBase));
-  return resultNa7;
+  twelveBase = base / 12;
+  resultNa12 = Math.floor(number / twelveBase) + Math.floor(number / (twelveBase * twelveBase)) + Math.floor(number / (twelveBase * twelveBase* twelveBase)) + Math.floor(number / (twelveBase * twelveBase * twelveBase * twelveBase)) + Math.floor(number / (twelveBase * twelveBase * twelveBase * twelveBase * twelveBase)) + Math.floor(number / (twelveBase * twelveBase * twelveBase * twelveBase * twelveBase * twelveBase)) + Math.floor(number / (twelveBase * twelveBase * twelveBase * twelveBase * twelveBase * twelveBase * twelveBase)) + Math.floor(number / (twelveBase * twelveBase * twelveBase * twelveBase * twelveBase * twelveBase * twelveBase * twelveBase)) + Math.floor(number / (twelveBase * twelveBase * twelveBase * twelveBase * twelveBase * twelveBase * twelveBase * twelveBase * twelveBase));
+  return resultNa12;
 }
 else{
-  resultNa7 = 0;
+  resultNa12 = 0;
 }
 
 var resultNa8;
