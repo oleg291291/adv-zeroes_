@@ -1,10 +1,23 @@
 module.exports = function getZerosCount(number, base) {
 //hm
 
+var resultNa16;
+var sixteenBase;
+
+if(base % 16 == 0){
+
+  sixteenBase = Math.floor(base / 16);
+  resultNa16 = Math.floor(number / sixteenBase) + Math.floor(number / (sixteenBase * sixteenBase)) + Math.floor(number / (sixteenBase * sixteenBase* sixteenBase)) + Math.floor(number / (sixteenBase * sixteenBase * sixteenBase * sixteenBase)) + Math.floor(number / (sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase)) + Math.floor(number / (sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase)) + Math.floor(number / (sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase)) + Math.floor(number / (sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase)) + Math.floor(number / (sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase));
+  return resultNa16;
+}
+else{
+  resultNa16 = 0;
+}
+
 var resultNa12;
 var twelveBase;
 if(base % 12 == 0){
-  
+
   twelveBase = base / 12;
   resultNa12 = Math.floor(number / twelveBase) + Math.floor(number / (twelveBase * twelveBase)) + Math.floor(number / (twelveBase * twelveBase* twelveBase)) + Math.floor(number / (twelveBase * twelveBase * twelveBase * twelveBase)) + Math.floor(number / (twelveBase * twelveBase * twelveBase * twelveBase * twelveBase)) + Math.floor(number / (twelveBase * twelveBase * twelveBase * twelveBase * twelveBase * twelveBase)) + Math.floor(number / (twelveBase * twelveBase * twelveBase * twelveBase * twelveBase * twelveBase * twelveBase)) + Math.floor(number / (twelveBase * twelveBase * twelveBase * twelveBase * twelveBase * twelveBase * twelveBase * twelveBase)) + Math.floor(number / (twelveBase * twelveBase * twelveBase * twelveBase * twelveBase * twelveBase * twelveBase * twelveBase * twelveBase));
   return resultNa12;
@@ -24,6 +37,9 @@ if(base % 8 == 0){
 else{
   resultNa8 = 0;
 }
+
+
+
 
 
 
