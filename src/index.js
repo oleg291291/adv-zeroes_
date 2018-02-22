@@ -4,6 +4,28 @@ module.exports = function getZerosCount(number, base) {
 var resultNa16;
 var sixteenBase;
 
+// if(base % 14 == 0){
+
+//   sixteenBase = Math.floor(base / 14);
+//   resultNa16 = Math.floor(number / sixteenBase) + Math.floor(number / (sixteenBase * sixteenBase)) + Math.floor(number / (sixteenBase * sixteenBase* sixteenBase)) + Math.floor(number / (sixteenBase * sixteenBase * sixteenBase * sixteenBase)) + Math.floor(number / (sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase)) + Math.floor(number / (sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase)) + Math.floor(number / (sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase)) + Math.floor(number / (sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase)) + Math.floor(number / (sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase));
+//   return resultNa16;
+// }
+// else{
+//   resultNa16 = 0;
+// }
+
+
+if(base % 20 == 0){
+
+  sixteenBase = Math.floor(base / 20);
+  resultNa16 = Math.floor(number / sixteenBase) + Math.floor(number / (sixteenBase * sixteenBase)) + Math.floor(number / (sixteenBase * sixteenBase* sixteenBase)) + Math.floor(number / (sixteenBase * sixteenBase * sixteenBase * sixteenBase)) + Math.floor(number / (sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase)) + Math.floor(number / (sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase)) + Math.floor(number / (sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase)) + Math.floor(number / (sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase)) + Math.floor(number / (sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase * sixteenBase));
+  return resultNa16;
+}
+else{
+  resultNa16 = 0;
+}
+
+
 if(base % 16 == 0){
 
   sixteenBase = Math.floor(base / 16);
