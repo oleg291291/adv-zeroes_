@@ -1,5 +1,5 @@
 module.exports = function getZerosCount(number, base) {
-//hm
+//
 
 var resultNa16;
 var sixteenBase;
